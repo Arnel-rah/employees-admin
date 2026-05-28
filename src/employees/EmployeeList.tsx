@@ -1,14 +1,48 @@
-import { BooleanField, DataTable, List,NumberField, TextField } from "react-admin";
+import {
+  List,
+  Datagrid,
+  TextField,
+  NumberField,
+  BooleanField,
+  EditButton,
+  DeleteButton,
+  ShowButton,
+  SearchInput,
+  SelectInput,
+  ListProps,
+} from "react-admin";
+import { FC } from "react";
+const employeeFilters = [
+  <SearchInput source="q" alwaysOn />,
+  <SelectInput
+    source="department"
+    choices={[
+      { id: "Informatique", name: "Informatique" },
+      { id: "Marketing", name: "Marketing" },
+      { id: "RH", name: "RH" },
+      { id: "Finance", name: "Finance" },
+    ]}
+  />,
+];
 
-const EmployeeList = () => (
-  <List>
-    <DataTable>
-      <DataTable.Col source="firstname,lastname" field={TextField}/>
-      <DataTable.Col source="email" field={TextField}/>
-      <DataTable.Col source="departement" field={TextField}/>
-      <DataTable.Col source="256€" field={NumberField}/>
-      <DataTable.Col source="active" field={BooleanField}/>
-    </DataTable>
+const EmployeeList: FC<ListProps> = () => (
+  <List filters={employeeFilters} perPage={5}>
+    <Datagrid rowClick="show">
+      <TextField source="id" label="ID" />
+      <TextField source="firstname" label="Prénom" />
+      <TextField source="lastname" label="Nom" />
+      <TextField source="email" label="Email" />
+      <TextField source="department" label="Département" />
+      <NumberField
+        source="salary"
+        label="Salaire"
+        options={{ style: 'currency', currency: 'EUR' }}
+      />
+      <BooleanField source="active" label="Actif" />
+      <ShowButton />
+      <EditButton />
+      <DeleteButton />
+    </Datagrid>
   </List>
 );
 
