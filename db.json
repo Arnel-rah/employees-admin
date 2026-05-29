@@ -23,6 +23,15 @@
       "departement": "RH",
       "salaire": "2600€",
       "actif": "Non"
+    },
+    {
+      "active": true,
+      "firstname": "arnel",
+      "lastname": "kely",
+      "email": "sadiarnel145@gmail.com",
+      "department": "Marketing",
+      "salary": 4500,
+      "id": 4
     }
   ]
 }
