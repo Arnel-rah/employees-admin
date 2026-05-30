@@ -2,27 +2,30 @@
   "employees": [
     {
       "id": 1,
-      "prenom": "Alice Martin",
+      "firstname": "Alice",
+      "lastname": "Martin",
       "email": "alice@comapany.com",
-      "departement": "Informatique",
-      "salaire": "2800€",
-      "actif": "Oui"
+      "department": "Informatique",
+      "salary": "2800€",
+      "active": true
     },
     {
       "id": 2,
-      "prenom": "Bob Dupont",
+      "firstname": "Bob",
+      "lastname": "Dupont",
       "email": "bob@company.com",
-      "departement": "Marketing",
-      "salaire": "2500€",
-      "actif": "Oui"
+      "department": "Marketing",
+      "salary": "2500€",
+      "active": true
     },
     {
       "id": 3,
-      "prenom": "Clara Nguyen",
+      "firstname": "Clara",
+      "lastname": "Nguyen",
       "email": "clara@comapany.com",
-      "departement": "RH",
-      "salaire": "2600€",
-      "actif": "Non"
+      "department": "RH",
+      "salary": "2600€",
+      "active": false
     },
     {
       "active": true,
@@ -30,8 +33,9 @@
       "lastname": "kely",
       "email": "sadiarnel145@gmail.com",
       "department": "Marketing",
-      "salary": 4500,
-      "id": 4
+      "salary": "4500€",
+      "id": 4,
+      "function": "Manager"
     }
   ]
 }

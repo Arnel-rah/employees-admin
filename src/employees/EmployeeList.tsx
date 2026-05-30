@@ -29,16 +29,16 @@ const EmployeeList: FC<ListProps> = () => (
   <List filters={employeeFilters} perPage={5}>
     <Datagrid rowClick="show">
       <TextField source="id" label="ID" />
-      <TextField source="firstname" label="Prénom" />
-      <TextField source="lastname" label="Nom" />
+      <TextField source="firstname" label="Firstname" />
+      <TextField source="lastname" label="Lastname" />
       <TextField source="email" label="Email" />
-      <TextField source="department" label="Département" />
+      <TextField source="department" label="Department" />
       <NumberField
         source="salary"
-        label="Salaire"
+        label="Salary"
         options={{ style: 'currency', currency: 'EUR' }}
       />
-      <BooleanField source="active" label="Actif" />
+      <BooleanField source="active" label="Active" />
       <ShowButton />
       <EditButton />
       <DeleteButton />
