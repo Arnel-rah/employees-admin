@@ -16,12 +16,12 @@ const EmployeeCreate: FC<CreateProps> = () => (
     <SimpleForm>
       <TextInput
         source="firstname"
-        label="Prénom"
+        label="Firstname"
         validate={required("Le prénom est obligatoire")}
       />
       <TextInput
         source="lastname"
-        label="Nom"
+        label="Lastname"
         validate={required("Le nom est obligatoire")}
       />
       <TextInput
@@ -31,7 +31,7 @@ const EmployeeCreate: FC<CreateProps> = () => (
       />
       <SelectInput
         source="department"
-        label="Département"
+        label="Department"
         validate={required("Le département est obligatoire")}
         choices={[
           { id: "Informatique", name: "Informatique" },
@@ -42,13 +42,13 @@ const EmployeeCreate: FC<CreateProps> = () => (
       />
       <NumberInput
         source="salary"
-        label="Salaire"
+        label="Salary"
         validate={[
-          required("Le salaire est obligatoire"),
-          minValue(1500, "Le salaire minimum est 1500€")
+          required("The salary is required"),
+          minValue(1500, "The minimum salary is 1500€")
         ]}
       />
-      <BooleanInput source="active" label="Actif" defaultValue={true} />
+      <BooleanInput source="active" label="Active" defaultValue={true} />
     </SimpleForm>
   </Create>
 );
