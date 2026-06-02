@@ -4,9 +4,9 @@
       "id": 1,
       "firstname": "Alice",
       "lastname": "Martin",
-      "email": "alice@comapany.com",
+      "email": "alice@company.com",
       "department": "Informatique",
-      "salary": "2800€",
+      "salary": 2800,
       "active": true
     },
     {
@@ -15,27 +15,103 @@
       "lastname": "Dupont",
       "email": "bob@company.com",
       "department": "Marketing",
-      "salary": "2500€",
+      "salary": 2500,
       "active": true
     },
     {
       "id": 3,
       "firstname": "Clara",
       "lastname": "Nguyen",
-      "email": "clara@comapany.com",
+      "email": "clara@company.com",
       "department": "RH",
-      "salary": "2600€",
+      "salary": 2600,
       "active": false
     },
     {
-      "active": true,
-      "firstname": "arnel",
-      "lastname": "kely",
-      "email": "sadiarnel145@gmail.com",
-      "department": "Marketing",
-      "salary": "4500€",
       "id": 4,
-      "function": "Manager"
+      "firstname": "David",
+      "lastname": "Lefevre",
+      "email": "david@company.com",
+      "department": "Finance",
+      "salary": 3000,
+      "active": true
+    },
+    {
+      "id": 5,
+      "firstname": "Eva",
+      "lastname": "Schmidt",
+      "email": "eva@company.com",
+      "department": "Informatique",
+      "salary": 2900,
+      "active": true
+    }
+  ],
+  "interns": [
+    {
+      "id": 1,
+      "firstname": "Thomas",
+      "lastname": "Durand",
+      "email": "thomas@intern.com",
+      "managerId": 1,
+      "department": "Informatique",
+      "isRemunerate": true,
+      "remuneration": 500
+    },
+    {
+      "id": 2,
+      "firstname": "Sophie",
+      "lastname": "Martin",
+      "email": "sophie@intern.com",
+      "managerId": 1,
+      "department": "Informatique",
+      "isRemunerate": false,
+      "remuneration": 0
+    },
+    {
+      "id": 3,
+      "firstname": "Lucas",
+      "lastname": "Blanc",
+      "email": "lucas@intern.com",
+      "managerId": 2,
+      "department": "Marketing",
+      "isRemunerate": true,
+      "remuneration": 600
+    },
+    {
+      "id": 4,
+      "firstname": "Marie",
+      "lastname": "Garnier",
+      "email": "marie@intern.com",
+      "managerId": 4,
+      "department": "Finance",
+      "isRemunerate": true,
+      "remuneration": 550
+    },
+    {
+      "id": 5,
+      "firstname": "Hugo",
+      "lastname": "Lefebvre",
+      "email": "hugo@intern.com",
+      "managerId": 5,
+      "department": "Informatique",
+      "isRemunerate": false,
+      "remuneration": 0
+    },
+    {
+      "firstname": "arnel",
+      "lastname": "sadi",
+      "managerId": 5,
+      "isRemunerate": false,
+      "department": "Informatique",
+      "id": 6
+    },
+    {
+      "firstname": "ke",
+      "lastname": "teste",
+      "managerId": 5,
+      "isRemunerate": false,
+      "department": "Informatique",
+      "id": 7
     }
   ]
 }
